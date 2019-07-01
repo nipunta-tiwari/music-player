@@ -22,6 +22,14 @@
 	<div class="g song">g</div>
 	<div class="h song">h</div>
 	<div class="i song">i</div>
+    
+    <div class="j song">j</div>
+	<div class="k song">k</div>
+	<div class="l song">l</div>
+
+	<div class="m song">m</div>
+	<div class="n song">n</div>
+	<div class="o song">o</div>
 </main>
 <script>
 	var divlength = document.querySelectorAll('.song').length;
@@ -34,6 +42,7 @@
 	}
 	var song1 = new Audio();
 	song1.src = "music/ms1.mp3";
+
 
 	var song2 = new Audio();
 	song2.src = "music/ms2.mp3";
@@ -59,50 +68,175 @@
 	var song9 = new Audio();
 	song9.src = "music/ms9.mp3";
 
+	var song10 = new Audio();
+	song10.src = "music/ms10.mp3";
 
+	var song11 = new Audio();
+	song11.src = "music/ms2.mp3";
+
+	var song12 = new Audio();
+	song12.src = "music/ms4.mp3";
+
+	var song13 = new Audio();
+	song13.src = "music/ms6.mp3";
+
+	var song14 = new Audio();
+	song14.src = "music/ms5.mp3";
+
+	var song15 = new Audio();
+	song15.src = "music/ms8.mp3";
+
+
+var check;
 
 
 
 	function playsong(){
 
 		var songId = this.innerHTML;
-		console.log(songId);
+
+		
 
 		switch(songId) {
 			case "a":
+            if(check===1){
+            	pauseAll();
+            	song1.play();
+            	break;
+            }
 			song1.play();
+			check=1;
 			break;
 
              case "b":
+             if(check===1){
+             	pauseAll();
+            	song2.play();
+             	break;
+             }
 			song2.play();
+			check=1;
 			break;
             
             case "c":
+            if(check===1){
+            	pauseAll();
+            	song3.play();
+            	break;
+            }
 			song3.play();
+			check=1;
 			break;
 
 			 case "d":
+			 if(check===1){
+			 	pauseAll();
+            	song4.play();
+			 	break;
+			 }
 			song4.play();
+			check=1;
 			break;
 
 			 case "e":
+			  if(check===1){
+			  	pauseAll();
+            	song5.play();
+			 	break;
+			 }
 			song5.play();
+			check=1;
 			break;
 
 			 case "f":
+			  if(check===1){
+			  	pauseAll();
+            	song6.play();
+			 	break;}
 			song6.play();
+			check=1;
 			break;
 
 			 case "g":
+			  if(check===1){
+			  	pauseAll();
+            	song7.play();
+			 	break;}
 			song7.play();
+			check=1;
 			break;
 
 			  case "h":
+			   if(check===1){
+			   	pauseAll();
+            	song8.play();
+			 	break;}
 			song8.play();
+			check=1;
 			break;
 
+
 			  case "i":
+			   if(check===1){
+			   	pauseAll();
+            	song9.play();
+			 	break;}
 			song9.play();
+			check=1;
+			break;
+
+			  case "j":
+			   if(check===1){
+			   	pauseAll();
+            	song10.play();
+			 	break;}
+			song10.play();
+			check=1;
+			break;
+
+			  case "k":
+			   if(check===1){
+			   	pauseAll();
+            	song11.play();
+			 	break;}
+			song11.play();
+			check=1;
+			break;
+
+			  case "l":
+			   if(check===1){
+			   	pauseAll();
+            	song12.play();
+			 	break;}
+			song12.play();
+			check=1;
+			break;
+
+			  case "m":
+			   if(check===1){
+			   	pauseAll();
+            	song13.play();
+			 	break;}
+			song13.play();
+			check=1;
+			break;
+
+			  case "n":
+			   if(check===1){
+			   	pauseAll();
+            	song14.play();
+			 	break;}
+			song14.play();
+			check=1;
+			break;
+
+			  case "o":
+			   if(check===1){
+			   	pauseAll();
+            	song15.play();
+			 	break;}
+			song15.play();
+			check=1;
 			break;
 
 
@@ -115,43 +249,82 @@
 function pausesong()
 {
   var songId = this.innerHTML;
-		console.log(songId);
+	
 
 		switch(songId) {
 			case "a":
 			song1.pause();
+			check=0;
 			break;
 
              case "b":
 			song2.pause();
+			check=0;
 			break;
             
             case "c":
 			song3.pause();
+			check=0;
 			break;
 
 			 case "d":
 			song4.pause();
+			check=0;
 			break;
 
 			 case "e":
 			song5.pause();
+			check=0;
 			break;
 
 			 case "f":
 			song6.pause();
+			check=0;
 			break;
 
 			 case "g":
 			song7.pause();
+			check=0;
 			break;
 
 			  case "h":
 			song8.pause();
+			check=0;
 			break;
 
 			  case "i":
 			song9.pause();
+			check=0;
+			break;
+
+			  case "j":
+			song10.pause();
+			check=0;
+			break;
+
+			  case "k":
+			song11.pause();
+			check=0;
+			break;
+
+			  case "l":
+			song12.pause();
+			check=0;
+			break;
+
+			  case "m":
+			song13.pause();
+			check=0;
+			break;
+
+              case "n":
+			song14.pause();
+			check=0;
+			break;
+
+			  case "o":
+			song15.pause();
+			check=0;
 			break;
 
 
@@ -159,6 +332,18 @@ function pausesong()
 			console.log("wrong input");
 			break;
 		}
+}
+function pauseAll()
+{
+	song1.pause();
+	song2.pause();
+	song3.pause();
+	song4.pause();
+	song5.pause();
+	song6.pause();
+	song7.pause();
+	song8.pause();
+    song9.pause();
 }
 </script>
 </body>
